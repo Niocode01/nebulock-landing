@@ -5,12 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NebuLock EU — Cloud Soberana y Segura</title>
   <meta name="description" content="NebuLock EU: consultora tecnológica pionera en cloud serverless blockchain con Chainkey technology, Sovereign AI, y ciberseguridad anti-quantum. Madrid.">
+  <meta name="keywords" content="cloud soberano, blockchain serverless, Chainkey, WebAssembly, ciberseguridad post-cuántica, sovereign AI, Madrid">
+  <meta name="author" content="NebuLock EU">
+  <meta property="og:title" content="NebuLock EU — Cloud Soberana y Segura">
+  <meta property="og:description" content="Infraestructura cloud serverless, soberana y resistente a quantum.">
+  <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+  <!-- LOADER -->
+  <div id="loader" class="loader">
+    <div class="loader-inner">NebuLock</div>
+  </div>
 
   <!-- NAVBAR -->
   <nav class="navbar" id="navbar">
@@ -47,6 +57,7 @@
         Infraestructura cloud serverless, soberana y resistente a quantum — 
         sobre Chainkey, Wasm y criptografía post-cuántica.
       </p>
+      <p class="hero-subtitle" style="opacity:.7;font-size:.9rem">Contenido disponible en español</p>
       <div class="hero-actions" id="heroActions">
         <a href="#servicios" class="btn-primary">Explorar soluciones</a>
         <a href="#contacto" class="btn-outline">Hablar con el equipo</a>
@@ -57,6 +68,18 @@
           <rect x="1" y="1" width="14" height="22" rx="7" stroke="currentColor" stroke-width="2"/>
           <circle cx="8" cy="8" r="2" fill="currentColor" class="scroll-dot"/>
         </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="section stats">
+    <div class="container">
+      <div class="services-grid">
+        <div class="service-card reveal"><h3 class="card-title counter" data-target="10">0</h3><p class="card-desc">+ años experiencia</p></div>
+        <div class="service-card reveal"><h3 class="card-title counter" data-target="25">0</h3><p class="card-desc">+ proyectos críticos</p></div>
+        <div class="service-card reveal"><h3 class="card-title counter" data-target="15">0</h3><p class="card-desc">+ clientes</p></div>
+        <div class="service-card reveal"><h3 class="card-title counter" data-target="100">0</h3><p class="card-desc">% enfoque UE</p></div>
       </div>
     </div>
   </section>
@@ -77,7 +100,7 @@
             <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="8" width="32" height="32" rx="4" stroke="currentColor" stroke-width="2"/><path d="M18 24l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="36" cy="12" r="6" fill="var(--accent)" opacity="0.3"/></svg>
           </div>
           <h3 class="card-title">Cloud Serverless Blockchain</h3>
-          <p class="card-desc">Plataforma serverless sobre Chainkey + WebAssembly. Ejecución descentralizada con integridad militar y sin servidores expuestos.</p>
+          <p class="card-desc">Diseño e implementación de plataformas serverless sobre Chainkey + WebAssembly. Eliminamos servidores tradicionales, reducimos superficie de ataque y garantizamos ejecución verificable en entornos descentralizados.</p>
           <div class="card-tech"><span>Chainkey</span><span>Wasm</span></div>
         </div>
 
@@ -86,7 +109,7 @@
             <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="2"/><path d="M24 16v8l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="38" cy="10" r="4" fill="var(--accent)" opacity="0.3"/></svg>
           </div>
           <h3 class="card-title">Sovereign AI Solutions</h3>
-          <p class="card-desc">Modelos de IA soberanos, entrenados en infraestructura propia dentro de la UE. Sin dependencia de hyperscalers extranjeros.</p>
+          <p class="card-desc">Desarrollo de modelos de IA entrenados y desplegados en infraestructura controlada por el cliente dentro de la UE. Incluye fine-tuning, privacidad de datos y despliegue edge.</p>
           <div class="card-tech"><span>Soberanía</span><span>UE</span></div>
         </div>
 
@@ -95,7 +118,7 @@
             <svg viewBox="0 0 48 48" fill="none"><path d="M24 4L4 44h40L24 4z" stroke="currentColor" stroke-width="2"/><path d="M24 20v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="24" cy="34" r="2" fill="currentColor"/></svg>
           </div>
           <h3 class="card-title">Ciberseguridad Anti-Quantum</h3>
-          <p class="card-desc">Criptografía post-cuántica (CRYSTALS-Kyber, Dilithium), auditoría de resistencia cuántica y migración de infraestructura crítica.</p>
+          <p class="card-desc">Auditorías de preparación frente a amenazas cuánticas, implementación de criptografía PQC y planes de migración progresiva para sistemas críticos.</p>
           <div class="card-tech"><span>PQC</span><span>CRYSTALS</span></div>
         </div>
 
@@ -143,6 +166,22 @@
           <p class="card-desc">Arquitectura de contratos inteligentes, L2/L3 sovereignty rollups, identidad descentralizada (DID) y tokenización de activos reales.</p>
           <div class="card-tech"><span>Web3</span><span>DID</span></div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- METODOLOGIA -->
+  <section class="section metodologia">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">/ metodología</span>
+        <h2 class="section-title">Cómo <span class="accent">trabajamos</span></h2>
+      </div>
+      <div class="tech-stack">
+        <div class="tech-layer reveal"><div class="tech-number">01</div><div class="tech-content"><h3>Evaluación</h3><p>Análisis de riesgos, arquitectura actual y requisitos regulatorios.</p></div></div>
+        <div class="tech-layer reveal"><div class="tech-number">02</div><div class="tech-content"><h3>Diseño</h3><p>Arquitectura soberana adaptada al caso: cloud, blockchain o IA.</p></div></div>
+        <div class="tech-layer reveal"><div class="tech-number">03</div><div class="tech-content"><h3>Implementación</h3><p>Despliegue progresivo con validación criptográfica y automatización.</p></div></div>
+        <div class="tech-layer reveal"><div class="tech-number">04</div><div class="tech-content"><h3>Operación</h3><p>Monitorización, hardening continuo y soporte especializado.</p></div></div>
       </div>
     </div>
   </section>
@@ -237,6 +276,10 @@
         <div class="about-vision reveal" data-delay="100">
           <h3>Visión</h3>
           <p>«Creemos que la soberanía tecnológica no es opcional. En un mundo donde la infraestructura cloud está controlada por tres hyperscalers no europeos, las instituciones y empresas necesitan una alternativa que garantice integridad, confidencialidad y autonomía regulatoria. NebuLock EU nace para ser esa alternativa.»</p>
+          <h3 style="margin-top:20px">Misión</h3>
+          <p>Diseñar y desplegar infraestructura digital soberana que permita a organizaciones europeas operar con independencia tecnológica y máxima seguridad.</p>
+          <h3 style="margin-top:20px">Valores</h3>
+          <p>Soberanía, seguridad por diseño, transparencia criptográfica y resiliencia a largo plazo.</p>
           <div class="vision-location">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
             Madrid, España
@@ -286,12 +329,18 @@
       </div>
     </div>
 
-    <div class="contact-footer">
+    <footer class="contact-footer">
       <div class="container">
         <p>&copy; 2026 NebuLock EU. Todos los derechos reservados.</p>
         <p class="footer-tagline">Built in Madrid. Sovereign by design.</p>
+        <div style="margin-top:10px;font-size:.85rem;opacity:.7">
+          <a href="#servicios">Servicios</a> ·
+          <a href="#tecnologia">Tecnología</a> ·
+          <a href="#nosotros">Nosotros</a> ·
+          <a href="#contacto">Contacto</a>
+        </div>
       </div>
-    </div>
+    </footer>
   </section>
 
   <!-- Cursor personalizado -->

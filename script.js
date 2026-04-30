@@ -348,3 +348,65 @@ document.addEventListener('DOMContentLoaded', () => {
 
   console.log('NebuLock EU — Sovereign Infrastructure. Built in Madrid.');
 });
+// Loader
+window.addEventListener('load', () => {
+  const loader = document.getElementById('loader');
+  setTimeout(()=> loader.classList.add('hidden'), 600);
+});
+
+// Navbar scroll + active link
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-link');
+
+window.addEventListener('scroll', () => {
+  const scrollY = window.scrollY;
+
+  document.getElementById('navbar').classList.toggle('scrolled', scrollY > 20);
+
+  sections.forEach(sec => {
+    const top = sec.offsetTop - 120;
+    const height = sec.offsetHeight;
+    if (scrollY >= top && scrollY < top + height) {
+      navLinks.forEach(l => l.classList.remove('active'));
+      const active = document.querySelector(`.nav-link[href="#${sec.id}"]`);
+      if (active) active.classList.add('active');
+    }
+  });
+});
+
+// Counter animation
+const counters = document.querySelectorAll('.counter');
+const runCounter = (el) => {
+  const target = +el.dataset.target;
+  let current = 0;
+  const step = target / 40;
+  const update = () => {
+    current += step;
+    if (current < target) {
+      el.textContent = Math.floor(current);
+      requestAnimationFrame(update);
+    } else {
+      el.textContent = target;
+    }
+  };
+  update();
+};
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      if (e.target.classList.contains('counter')) runCounter(e.target);
+      e.target.classList.add('visible');
+      observer.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.3 });
+
+document.querySelectorAll('.reveal, .counter').forEach(el => observer.observe(el));
+
+// Parallax hero
+const hero = document.getElementById('hero');
+window.addEventListener('scroll', () => {
+  const y = window.scrollY * 0.3;
+  hero.style.backgroundPosition = `center ${y}px`;
+});
